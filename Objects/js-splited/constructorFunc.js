@@ -1,18 +1,3 @@
-//? factory functions
-
-function factoryFunction(name,age){
-    return {
-        name,
-        age,
-        sayHello(){
-            console.log(`hello ${name}`);
-        }
-    };
-};
-
-const p1 = factoryFunction('babak',20);
-p1.sayHello()
-
 //? constructor functions
 
 function ConstructorFunction(name,age){
@@ -45,19 +30,3 @@ const arrLit = [1,2,3];
 const arrObj = new Array([1,2,3]);
 // ! WARNING
 console.log(typeof arrLit); //! object
-
-// ? dynamic nature of objects
-
-const obj = {
-    fullName : 'babak',
-    age : 20
-}
-
-obj.city = 'tabriz'
-delete obj.age
-
-console.log(Object.keys(obj));
-console.log(Object.values(obj));
-console.log(Object.entries(obj));
-
-console.log(obj);
