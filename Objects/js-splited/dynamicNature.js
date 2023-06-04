@@ -1,3 +1,4 @@
+
 // ? dynamic nature of objects
 
 const obj = {
@@ -11,5 +12,6 @@ delete obj.age
 console.log(Object.keys(obj));
 console.log(Object.values(obj));
 console.log(Object.entries(obj));
+console.log(obj.hasOwnProperty('city')); //! true.
 
 console.log(obj);
